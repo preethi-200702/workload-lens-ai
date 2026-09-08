@@ -1,6 +1,9 @@
 # DeadlineLens AI
 
 > **Don't just manage tasks. Understand whether your workload is achievable.**
+> ## 🌐 Live Demo
+
+[🚀 Try DeadlineLens AI](https://workload-lens-ai.lovable.app)
 
 DeadlineLens AI is an AI-powered workload intelligence application designed for students and young professionals.
 
@@ -258,4 +261,4 @@ Mobile application
 
 ## 📸 Preview
 
-![DeadlineLens AI Workload Map](screenshots/workload-map.png)
+![DeadlineLens AI Workload Map](workload-map.png)
