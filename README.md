@@ -1,410 +1,261 @@
-# Workload Lens
+# DeadlineLens AI
 
-Build a polished, functional web application prototype called "DeadlineLens AI".
+> **Don't just manage tasks. Understand whether your workload is achievable.**
 
-IMPORTANT:
+DeadlineLens AI is an AI-powered workload intelligence application designed for students and young professionals.
 
-This is a hackathon/innovation prototype and we have only a short time to demonstrate it. Prioritize a working, clickable and visually polished MVP over complex backend infrastructure.
+It transforms unstructured work requirements such as assignments, project descriptions, meeting notes, and messages into an actionable workload.
 
-CONCEPT:
+Instead of simply managing tasks, DeadlineLens AI analyzes deadlines, estimates effort, identifies workload collisions, and generates a recommended work plan.
 
-DeadlineLens AI is an AI-powered workload intelligence application.
+---
 
-The problem:
+## 🚀 Problem
 
-Students and young professionals receive work from many sources such as assignment descriptions, project requirements, meeting notes and messages. Traditional task managers require users to manually create and organize tasks. They do not focus primarily on whether the user's overall workload is realistically achievable.
+Students and young professionals receive work from multiple sources:
 
-Our solution:
+- Assignments
+- Projects
+- Presentations
+- Meeting notes
+- Messages
+- Assessments
+- Documentation tasks
 
-The user can paste unstructured work requirements into DeadlineLens AI. The application analyzes the information, extracts tasks, identifies deadlines, estimates effort, assigns priority, detects workload collisions and generates a recommended work plan.
+Traditional task managers require users to manually create and organize these tasks.
 
-The key differentiator is:
+However, they often fail to answer an important question:
 
-"Don't just manage tasks. Understand whether your workload is achievable."
+> **"Can I realistically complete all of this work before the deadlines?"**
 
-BUILD THESE 5 MAIN SCREENS:
+DeadlineLens AI focuses on workload achievability rather than simple task management.
 
-1. LANDING / DASHBOARD
+---
 
-Create a modern productivity dashboard.
+## 💡 Solution
 
-Header:
+DeadlineLens AI allows users to paste unstructured work requirements into the application.
 
-DeadlineLens AI
+The system then:
 
-"See your workload before it overwhelms you."
+1. Extracts tasks
+2. Identifies deadlines
+3. Estimates effort
+4. Assigns priority
+5. Detects workload collisions
+6. Visualizes workload distribution
+7. Generates an AI-recommended work plan
 
-Show summary cards:
+---
 
-- 7 Active Tasks
+## 🎯 Key Differentiator
 
-- 3 High Priority
+### Don't just manage tasks. Understand whether your workload is achievable.
 
-- 2 Workload Conflicts
+The core feature of DeadlineLens AI is the **Workload Map**, which helps users understand when their workload becomes excessive.
 
-- 24 Estimated Hours
+Instead of only showing a list of deadlines, the application answers:
 
-Show a weekly workload visualization.
+> **"Which days are overloaded, and what should I start earlier?"**
 
-Use a clean modern UI with:
+---
 
-- White/light background
+## ✨ Features
 
-- Dark text
+### 📊 Dashboard
 
-- Subtle blue/purple accent
+Provides an overview of the user's workload.
 
-- Rounded cards
+- Active Tasks
+- High Priority Tasks
+- Workload Conflicts
+- Estimated Hours
+- Weekly Workload Visualization
 
-- Professional SaaS-style interface
+---
 
-- Good spacing
+### 📝 Add Work
 
-- Responsive desktop and mobile layout
+Users can paste unstructured information such as:
 
-Include a prominent:
+- Assignment descriptions
+- Project requirements
+- Meeting notes
+- Messages
+- Other work instructions
 
-"+ Add New Work"
+The application converts this information into structured tasks.
 
-button.
+---
 
---------------------------------------------------
+### 🤖 AI Workload Analysis
 
-2. ADD WORK SCREEN
+DeadlineLens AI analyzes the submitted work and identifies:
 
-Create a page where the user can paste or type unstructured work information.
+- Task name
+- Deadline
+- Estimated effort
+- Priority
+- Status
 
-Heading:
+---
 
-"Add your work"
+### 🗺️ Workload Map
 
-Subheading:
+The Workload Map is the core feature of the application.
 
-"Paste assignments, project requirements, meeting notes or other work. DeadlineLens will turn them into an actionable workload."
+It visualizes the amount of planned work for each day.
 
-Large textarea.
+Workload levels:
 
-Pre-fill it with this DEMO DATA:
+🟢 Light  
+🟡 Moderate  
+🟠 High  
+🔴 Critical
 
-"DBMS Assignment: Complete normalization and SQL questions. Due September 12. Estimated effort 3 hours.
+The system highlights workload collisions and overloaded days.
 
-Java Project: Build the authentication and dashboard modules. Due September 15. Estimated effort 8 hours.
+---
 
-Presentation: Prepare a 10-slide presentation and practice the explanation. Due September 14. Estimated effort 4 hours.
+### 🧠 AI Recommendation
 
-Aptitude Practice: Complete 3 practice modules before the assessment. Due September 13. Estimated effort 2 hours.
+The application generates a recommended schedule by moving high-effort tasks earlier.
 
-Project Documentation: Prepare the final project documentation. Due September 16. Estimated effort 3 hours."
+Example:
 
-Add a large button:
-
-"Analyze My Workload"
-
-When clicked, show a short loading animation:
-
-"Analyzing your workload..."
-
-"Extracting tasks..."
-
-"Estimating effort..."
-
-"Checking deadline conflicts..."
-
-Then navigate to the analysis results.
-
---------------------------------------------------
-
-3. AI ANALYSIS SCREEN
-
-Create an AI analysis results page.
-
-Heading:
-
-"Workload Analysis"
-
-Show extracted tasks in a professional table.
-
-Columns:
-
-Task
-
-Deadline
-
-Estimated Effort
-
-Priority
-
-Status
-
-Use these results:
-
-DBMS Assignment | Sep 12 | 3 hrs | High | Not Started
-
-Aptitude Practice | Sep 13 | 2 hrs | Medium | Not Started
-
-Presentation | Sep 14 | 4 hrs | High | Not Started
-
-Java Project | Sep 15 | 8 hrs | High | Not Started
-
-Project Documentation | Sep 16 | 3 hrs | Medium | Not Started
-
-Above the table show:
-
-"5 tasks identified"
-
-"20 estimated hours"
-
-"3 high-priority tasks"
-
-Add a small explanation:
-
-"AI identified multiple high-effort tasks with closely spaced deadlines."
-
-Add button:
-
-"View Workload"
-
---------------------------------------------------
-
-4. WORKLOAD MAP SCREEN
-
-This is the CORE FEATURE and should be visually impressive.
-
-Heading:
-
-"Your Workload Map"
-
-Show a 7-day workload visualization.
-
-Use:
-
-September 9 — 2 hrs — Light
-
-September 10 — 3 hrs — Moderate
-
-September 11 — 4 hrs — Moderate
-
-September 12 — 6 hrs — High
-
-September 13 — 7 hrs — Critical
-
-September 14 — 6 hrs — High
-
-September 15 — 5 hrs — High
-
-Use visual workload indicators:
-
-Green = Light
-
-Yellow = Moderate
-
-Orange = High
-
-Red = Critical
-
-Clearly highlight September 13 and September 14.
-
-Add a warning card:
-
-"⚠ Workload Collision Detected"
-
-"September 13–14 contains approximately 13 hours of planned work across multiple deadlines."
-
-Then show:
-
-"Your workload is unevenly distributed. Starting the Java Project and DBMS Assignment earlier can reduce peak workload."
-
-Add button:
-
-"Get AI Recommendation"
-
---------------------------------------------------
-
-5. AI RECOMMENDATION SCREEN
-
-This should be the final WOW screen.
-
-Heading:
-
-"AI Recommended Plan"
-
-Show a prominent recommendation card:
-
-"Start earlier to avoid a deadline collision."
-
-Then show:
 
 TODAY
-
 → Start DBMS Assignment
-
 → Spend 1.5 hours
 
 SEPTEMBER 10
-
 → Start Java Project
-
 → Spend 2 hours
 
 SEPTEMBER 11
-
 → Continue Java Project
-
 → Spend 2 hours
 
 SEPTEMBER 12
-
 → Complete DBMS Assignment
-
 → Practice Aptitude
 
-→ Total: 3 hours
-
 SEPTEMBER 13
-
 → Continue Java Project
 
-→ Total: 3 hours
-
 SEPTEMBER 14
-
 → Complete Presentation
 
-→ Total: 4 hours
-
 SEPTEMBER 15
-
 → Finish Java Project
 
-→ Total: 3 hours
-
-Add another card:
-
-"Why this plan?"
-
-"Your original workload had a high concentration of tasks around September 13–14. Starting high-effort tasks earlier reduces the peak workload and creates buffer time before deadlines."
-
-Add a button:
-
-"Back to Dashboard"
-
---------------------------------------------------
-
-IMPORTANT PRODUCT BEHAVIOR:
-
-The prototype should feel like a REAL APPLICATION, not a static presentation.
-
-Buttons should work.
-
-The user should be able to follow this demo flow:
-
+🔄 Application Flow
 Dashboard
+    ↓
+Add New Work
+    ↓
+Paste Work Requirements
+    ↓
+Analyze My Workload
+    ↓
+AI Workload Analysis
+    ↓
+View Workload
+    ↓
+Workload Map
+    ↓
+Get AI Recommendation
+    ↓
+Recommended Work Plan
 
-→ Add New Work
+🧪 Demo Scenario
 
-→ Analyze My Workload
+The prototype includes demonstration data containing:
 
-→ AI Analysis
+DBMS Assignment
+Java Project
+Presentation
+Aptitude Practice
+Project Documentation
 
-→ View Workload
+The demo shows how multiple deadlines can create workload concentration around September 13–14.
 
-→ Get AI Recommendation
+The system identifies the collision and recommends starting high-effort tasks earlier.
 
-→ Recommended Plan
+🛠️ Technology Stack
+Frontend
+React
+TypeScript
+HTML
+CSS
+Development
+Lovable
+Git
+GitHub
+AI / Intelligence
+AI-powered workload analysis
+Task extraction
+Effort estimation
+Priority analysis
+Workload collision detection
+Recommendation generation
 
-Use smooth transitions where appropriate.
+The current hackathon prototype uses pre-configured demonstration data instead of a production LLM backend.
 
-For this prototype, you may use pre-configured demo data instead of requiring a real LLM API.
+🖥️ Main Screens
+1. Dashboard
 
-However, the UI should clearly communicate where AI analysis occurs.
+Provides an overview of the user's workload.
 
-Do NOT build:
+2. Add Work
 
-- Login/signup
+Allows users to paste unstructured work requirements.
 
-- Payment
+3. Workload Analysis
 
-- Android application
+Displays extracted tasks, deadlines, effort and priority.
 
-- Complex authentication
+4. Workload Map
 
-- Complex database
+Visualizes workload intensity across the week and highlights collisions.
 
-- Gmail integration
+5. AI Recommended Plan
 
-- Google Calendar integration
+Provides an optimized plan for distributing work earlier.
 
-- Slack integration
+🌱 Sustainable Development Goal
 
-- Notifications
+DeadlineLens AI supports:
 
-- Admin dashboard
+SDG 4 — Quality Education
 
-Those belong in future scope.
+The application can help students organize academic workloads more effectively and reduce inefficient deadline-driven work.
 
---------------------------------------------------
+It promotes better planning, time management and sustainable learning practices.
 
-IMPORTANT DESIGN REQUIREMENTS:
+🎯 Target Users
+College students
+School students
+Young professionals
+Project teams
+Interns
+Freelancers
+🔮 Future Scope
 
-Make the interface look like a serious startup/hackathon product.
+Future versions could include:
 
-Avoid:
+Real LLM integration
+Google Calendar integration
+Gmail integration
+Slack integration
+Personalized workload prediction
+Calendar-aware scheduling
+Automatic task prioritization
+Productivity analytics
+Notifications and reminders
+Team workload analysis
+Mobile application
 
-- Generic chatbot appearance
+## 📸 Preview
 
-- Excessive gradients
-
-- Stock images
-
-- Unnecessary animations
-
-- Too many pages
-
-- Fake statistics
-
-- Lorem ipsum
-
-- Generic task-manager design
-
-The main visual focus should be:
-
-1. Workload visualization
-
-2. Collision detection
-
-3. AI recommendation
-
-Use clear typography, cards, charts, badges and progress indicators.
-
-Include a small label somewhere:
-
-"AI Workload Intelligence"
-
-and a footer:
-
-"DeadlineLens AI — Plan smarter. Avoid workload collisions."
-
-Make the final result polished enough to demonstrate to hackathon judges.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://workload-lens-ai.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/235054e9-4a91-409f-ae18-50fc383c16d2).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+![DeadlineLens AI Workload Map](screenshots/workload-map.png)
